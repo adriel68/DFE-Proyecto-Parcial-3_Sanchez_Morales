@@ -1,4 +1,4 @@
-# AppVentas
+# DFE-Proyecto-Parcial-3_Sanchez_Morales
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
 
