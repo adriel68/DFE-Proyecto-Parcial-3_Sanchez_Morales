@@ -1,0 +1,35 @@
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Fecha</th>
+        <th>Lugar</th>
+        <th>Precio</th>
+        <th>Entradas vendidas</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let event of eventList" (click)="selectedEvent = event">
+        <td>
+          <strong>{{ event.id }}</strong>
+        </td>
+        <td>
+          {{ event.name }}
+        </td>
+        <td>{{ event.description }}</td>
+        <td>{{ event.date }}</td>
+        <td>{{ event.location }}</td>
+        <td>{{ event.price | currency }}</td>
+        <td>{{ event.totalSoldTickets }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="message" *ngIf="eventList.length === 0">
+  <p>{{ loadingEvents ? "Cargando..." : "No se encontraron registros..." }}</p>
+</div>

@@ -1,0 +1,57 @@
+@import './variables';
+
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+  font-size: 1rem;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1); 
+
+  thead tr {
+    background-color: #3e4b5a; 
+    color: #ffffff; 
+    text-align: left;
+
+    th {
+      border: none;
+      font-size: 1.125rem;
+      padding: 1.8rem 1.2rem; 
+      white-space: nowrap;
+    }
+  }
+
+  tbody tr {
+    border-bottom: none;
+
+    &:nth-of-type(even) {
+      background-color: #f2f5f8; 
+    }
+
+    &:last-of-type {
+      border-bottom: 4px solid #3e4b5a; 
+    }
+
+    td {
+      padding: 1rem 1.2rem; 
+      border: none;
+      white-space: normal; 
+
+      img {
+        max-width: 80px; 
+        height: auto;
+      }
+    }
+  }
+}
+
+.message {
+  text-align: center;
+  font-size: 1.1rem; 
+  padding: 2.5rem; 
+}

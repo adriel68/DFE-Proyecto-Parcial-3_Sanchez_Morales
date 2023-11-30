@@ -1,0 +1,10 @@
+<section id="home">
+  <h2>
+    Available Events:
+  </h2>
+  <br>
+  <app-event-card
+    *ngFor="let event of eventsList"
+    [Event]="event"
+  ></app-event-card>
+</section>
